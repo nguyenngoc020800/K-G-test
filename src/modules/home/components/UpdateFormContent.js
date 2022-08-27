@@ -101,9 +101,8 @@ const UpdateFormContent = () => {
   });
   const onSubmit = (value) => {
     const data = { ...value, id: ID };
-    dispatch({ type: "form/updateForm", payload: data }).then(() => {
-      navigate("/userlist");
-    });
+    dispatch({ type: "form/updateForm", payload: data });
+    navigate("/userlist");
   };
   const onError = (value) => {
     console.log(value);

@@ -21,18 +21,14 @@ const Form = () => {
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center ">
       {notification ? (
-        <Notification
-          text="Hoàn thành cập nhật thông tin"
-          display="d-block"
-          handleClick={navigate("/userlist")}
-        />
+        <Notification text="Hoàn thành cập nhật thông tin" display="d-block" />
       ) : (
         <Notification text="Hoàn thành cập nhật thông tin" display="d-none" />
       )}
       <Formcontent>
         <div className="row justify-content-center">
           <div className="col-4  d-sm-block d-none">
-            <img src="./img/bg.jpeg" alt="" className="form-img" />
+            <img src="/img/bg.jpeg" alt="" className="form-img" />
           </div>
           <div className="col-12 col-sm-8 d-flex justify-content-center align-items-center ">
             <UpdateFormContent />
