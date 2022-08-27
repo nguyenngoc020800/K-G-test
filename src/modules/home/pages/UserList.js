@@ -18,7 +18,10 @@ const UserList = () => {
   const { notification, userList, del } = useSelector((state) => state.form);
   console.log("list", userList);
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center ">
+    <div
+      style={{ height: "100vh" }}
+      className="container-fluid d-flex justify-content-center align-items-center "
+    >
       {notification && del ? (
         <Notification text="xóa người dùng thành công" display="d-block" />
       ) : (

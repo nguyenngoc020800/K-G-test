@@ -19,7 +19,10 @@ const Form = () => {
   const navigate = useNavigate();
   const { notification } = useSelector((state) => state.form);
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center ">
+    <div
+      style={{ height: "100vh" }}
+      className="container-fluid d-flex justify-content-center align-items-center "
+    >
       {notification ? (
         <Notification text="Hoàn thành cập nhật thông tin" display="d-block" />
       ) : (

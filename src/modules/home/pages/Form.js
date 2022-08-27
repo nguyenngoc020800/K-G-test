@@ -20,7 +20,7 @@ const Form = () => {
     localStorage.setItem("userList", JSON.stringify(userList));
   }, [userList]);
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center ">
+    <div className="container-fluid d-flex justify-content-center align-items-center " style={{height:"100vh"}}>
       {notification ? (
         <Notification text="Hoàn thành nhập thông tin" display="d-block" />
       ) : (
